@@ -13,6 +13,7 @@ public partial class MainWindow : Window
     public List<Human>? info { get; set; }
 
 
+
     public MainWindow()
     {
         InitializeComponent();
