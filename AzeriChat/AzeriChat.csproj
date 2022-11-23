@@ -8,15 +8,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="attach.png" />
     <None Remove="chat.png" />
-    <None Remove="ronaldo.png" />
-    <None Remove="userFirst.png" />
+    <None Remove="icons8-call-80.png" />
+    <None Remove="Images\neymar.png" />
+    <None Remove="menu-2.png" />
+    <None Remove="microphone.png" />
+    <None Remove="send.png" />
+    <None Remove="whatsapp.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\attach.png" />
+    <Resource Include="Images\icons8-call-80.png" />
     <Resource Include="Images\chat.png" />
-    <Resource Include="ronaldo.png" />
-    <Resource Include="userFirst.png" />
+    <Resource Include="Images\neymar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\menu-2.png" />
+    <Resource Include="Images\microphone.png" />
+    <Resource Include="Images\send.png" />
+    <Resource Include="Images\whatsapp.png" />
   </ItemGroup>
 
 </Project>
