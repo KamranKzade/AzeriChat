@@ -10,18 +10,19 @@ namespace AzeriChat;
 
 public partial class MainWindow : Window
 {
-    public List<Human> info { get; set; }
+    public List<Human>? info { get; set; }
 
 
     public MainWindow()
     {
         InitializeComponent();
+
         info = new List<Human>();
         info = FakeRepo.GetContactInformation();
 
         foreach (var item in info)
         {
-            UserControl_Contact user = new UserControl_Contact(item);
+            UserControl_Contact user = new (item);
 
             if (item.MessageCount is null)
             {
@@ -48,10 +49,10 @@ public partial class MainWindow : Window
         tabcontrol.SelectedIndex = 1;
         var human = sender as UserControl_Contact;
 
-        UserControl_Messages messages = new UserControl_Messages();
+        UserControl_Messages messages = new ();
 
 
-        messages.Name.Content = human.Contact_Name_lbl.Content;
+        messages.Name.Content = human!.Contact_Name_lbl.Content;
         messages.Profile_Image.ImageSource = human.Profile_Image.ImageSource;
         messages.messages.Content = human.contact_messages_lbl.Content;
 

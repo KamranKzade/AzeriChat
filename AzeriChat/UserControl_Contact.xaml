@@ -16,11 +16,12 @@
 
                 <!-- Images -->
                 <Ellipse Grid.Column="0"
+                         Margin="2 0 0 0 "
                          Height="50"
                          Width="50">
                     <Ellipse.Fill>
                         <ImageBrush x:Name="Profile_Image" 
-                                    Stretch="Uniform"/>
+                                    Stretch="Fill"/>
                     </Ellipse.Fill>
                 </Ellipse>
 
@@ -33,14 +34,16 @@
 
                     <Label Content="Name"
                            Grid.Row="0"
+                           Margin="5 0 0 0"
                            Name="Contact_Name_lbl"
                            VerticalAlignment="Top"
-                           Padding="0 0 0 5"
+                           Padding="5 0 0 0"
                            FontWeight="ExtraBold"
                            Foreground="DimGray"/>
 
                     <Label Content="Messages"
                            Grid.Row="1"
+                           Margin="5 0 0 0"
                            Name="contact_messages_lbl"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
@@ -52,6 +55,7 @@
 
                 <!-- Timer, MessagesNumber -->
                 <StackPanel Grid.Column="2" Width="80">
+                    
                     <Label Content="Time"
                            FontSize="18"
                            Name="message_time_lbl"

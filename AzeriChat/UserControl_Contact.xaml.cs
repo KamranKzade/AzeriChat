@@ -1,7 +1,6 @@
 ﻿using AzeriChat.Models;
 using System;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace AzeriChat;
@@ -18,8 +17,7 @@ public partial class UserControl_Contact : UserControl
         Message_count_lbl.Content = information.MessageCount;
         message_time_lbl.Content = information.Time;
 
-
-       Profile_Image.ImageSource = new BitmapImage(new Uri(information.ImageUrl, UriKind.Relative));
-
+        Profile_Image.ImageSource = new BitmapImage(new Uri(information.ImageUrl, UriKind.Relative));
     }
+
 }

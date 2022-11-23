@@ -46,7 +46,7 @@
                              Width="40">
                             <Ellipse.Fill>
                                 <ImageBrush x:Name="Profile_Image"
-                                        Stretch="Uniform"/>
+                                        Stretch="Fill"/>
                             </Ellipse.Fill>
                         </Ellipse>
 
